@@ -10,7 +10,7 @@ class CashRegister
 
   def add_item(title, price, quantity = 1)
     self.total += price*quantity
-    @items << title
+    @items << total
     # if quantity>1
     #   i=0
     #   while i<quantity
@@ -39,6 +39,6 @@ class CashRegister
   end
 
   def void_last_transaction
-    @total -= @last_transaction.to_i
+    @total -= @last_transaction
   end
 end
