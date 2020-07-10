@@ -11,8 +11,8 @@ class CashRegister
     @@shopping_cart << @items
   end
 
-  def add_item(title, price, quantity = num)
-    self.total.quantity += price
+  def add_item(title, price)
+    self.total += price
   end
 
   def apply_discount
