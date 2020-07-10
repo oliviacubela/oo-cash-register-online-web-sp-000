@@ -12,7 +12,7 @@ class CashRegister
   end
 
   def add_item(title, price)
-    self.total += price(quantity)
+    self.total += price
     @@shopping_cart << price
   end
 
