@@ -24,7 +24,9 @@ class CashRegister
     # @last_transaction = @total
     # @total
   end
-
+  def items
+    @items
+  end
 
   def apply_discount
     if @discount > 0
