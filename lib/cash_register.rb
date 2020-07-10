@@ -15,9 +15,6 @@ class CashRegister
     end
     self.last_transaction = price*quantity
   end
-  # def items
-  #   @items
-  # end
 
   def apply_discount
     if @discount > 0
